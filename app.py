@@ -66,6 +66,10 @@ logger = get_logger(__name__)
 def create_app():
     # Initialize Flask application
     app = Flask(__name__)
+    
+    @app.route("/", methods=["GET", "HEAD"])
+    def health_check():
+        return "OK", 200
 
     # Initialize SocketIO
     socketio.init_app(app)  # Link SocketIO to the Flask app
