@@ -6,7 +6,7 @@ import threading
 from datetime import datetime, timedelta
 
 # Get API key from openalgo portal
-api_key = 'your-openalgo-api-key'
+api_key = '9c56d52753241db0345c2a8c576c0eea4d556523131b63c384b20f741c45f7f0'
 
 # Set the strategy details and trading parameters
 strategy = "Supertrend Python"

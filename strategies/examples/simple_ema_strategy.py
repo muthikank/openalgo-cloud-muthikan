@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 import os
 
 # Get API key from openalgo portal
-api_key = os.getenv('OPENALGO_APIKEY')
+api_key = os.getenv('OPENALGO_APIKEY','9c56d52753241db0345c2a8c576c0eea4d556523131b63c384b20f741c45f7f0')
 
 if not api_key:
     print("Error: OPENALGO_APIKEY environment variable not set")
